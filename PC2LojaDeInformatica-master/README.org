@@ -1,0 +1,3 @@
+* Projeto PC2 Loja de Informática
+Projeto utilizado na disciplina PC2 (Programação de Computadores2) na
+etec zona leste
