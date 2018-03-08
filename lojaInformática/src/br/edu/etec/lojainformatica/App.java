@@ -16,11 +16,14 @@ public class App extends JFrame {
 	private JMenu menu;
 	private JMenuItem menuItem;
 	
-	/*
+	
 	TelaDeCadastro tlaCadCli = new TelaCadClientes();
-	TelaDeCadastro tlaCadHard = new TelaCadDeHardware();
-	TelaDeCadastro tlaCadVads = new TelaCadDeVendas();
-	*/
+	TelaDeCadastro tlaCadHard = new TelaCadHardware();
+	TelaDeCadastro tlaCadVads = new TelaCadVendas();
+	
+	
+	
+	//construtor que faz que dá os parâmetros para se iniciar o JFrame
 	public App(){
 		this.setVisible(true);
 		this.setSize(800, 600);
@@ -30,15 +33,13 @@ public class App extends JFrame {
 		
 		configuraMenu();
 		this.pack();
-		
-
-	}
+	}//Fim do construtor
 	
 	private void configuraMenu(){
 		this.menuBar = new JMenuBar();
 		JMenu menuCadastros = new JMenu("CADASTROS");
 		
-		/*
+		
 		JMenuItem menuItemClientes = new JMenuItem("Clientes");
 		menuItemClientes.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
@@ -50,22 +51,22 @@ public class App extends JFrame {
 				
 			}
 		});
-		*/
+		
 	
-		//menuCadastro.add(menuItemClientes);
-		/*
+		menuCadastros.add(menuItemClientes); //adiciona este item ao menu clientes
+		
 		JMenuItem menuItemHardware = new JMenuItem("Hardware");
 		menuItemHardware.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				App.this.tlaCadCli.setVisible(false);
 				App.this.tlaCadVads.setVisible(false);
 				App.this.tlaCadHard.setVisible(true);
-				App.this.getContentPane().add(App.this.tleCadHard, BorderLayout.CENTER);
+				App.this.getContentPane().add(App.this.tlaCadHard, BorderLayout.CENTER);
 				App.this.pack();
 				
 			}
 		});
-		*/
+		
 		//menuCadastros.add(menuItemVenda);
 		
 		this.menuBar.add(menuCadastros);
@@ -76,6 +77,7 @@ public class App extends JFrame {
 	public static void main(String[] args){
 		
 		App app = new App();
-	}
+		app.setVisible(true);
+	}		
 
 }

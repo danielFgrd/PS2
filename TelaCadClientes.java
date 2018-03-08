@@ -1,4 +1,4 @@
-package br.edu.etec.lojainformatica;
+				package br.edu.etec.lojainformatica;
 
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -11,7 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
-import javax.swing.JTextField;
+import javax.swing.JTextField;	
 
 import br.edu.etec.lojainformatica.model.Cliente;
 import br.edu.etec.lojainformatica.persistence.ClienteJdbcDAO;
